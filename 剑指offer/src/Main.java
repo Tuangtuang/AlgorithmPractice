@@ -18,7 +18,9 @@ public class Main {
 //        testMirrorTree();
 //        testPrintMatrix();
 //        testBinaryTreePrint();
-        testVerifySquenceOfBST();
+//        testVerifySquenceOfBST();
+//        test_MoreThanHalfNum_Solution();
+        test_PrintMinNumber();
     }
 
     /**
@@ -206,5 +208,18 @@ public class Main {
         BSTreeVerify bsTreeVerify=new BSTreeVerify();
         boolean res=bsTreeVerify.VerifySquenceOfBST(temp);
         System.out.println(res);
+    }
+
+    static void test_MoreThanHalfNum_Solution(){
+        int[] temp=new int[]{1,2,3,2,2,2,5,4,2};
+        MoreThanHalfNum moreThanHalfNum = new MoreThanHalfNum();
+        int res=moreThanHalfNum.MoreThanHalfNum_Solution(temp);
+        System.out.println(res);
+    }
+
+    static void test_PrintMinNumber(){
+        int[] temp=new int[]{3,32,321};
+        PrintMinNumber printMinNumber=new PrintMinNumber();
+        System.out.println(printMinNumber.PrintMinNumber(temp));
     }
 }
