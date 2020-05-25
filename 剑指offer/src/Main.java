@@ -20,7 +20,11 @@ public class Main {
 //        testBinaryTreePrint();
 //        testVerifySquenceOfBST();
 //        test_MoreThanHalfNum_Solution();
-        test_PrintMinNumber();
+//        test_PrintMinNumber();
+//        test_GetUglyNumber_Solution();
+//        test_FirstNotRepeatingChar();
+//        test_GetNumberOfK();
+        test_FindNumsAppearOnce();
     }
 
     /**
@@ -222,4 +226,27 @@ public class Main {
         PrintMinNumber printMinNumber=new PrintMinNumber();
         System.out.println(printMinNumber.PrintMinNumber(temp));
     }
+
+
+    static void test_GetUglyNumber_Solution(){
+        GetUglyNumber getUglyNumber = new GetUglyNumber();
+        System.out.println(getUglyNumber.GetUglyNumber_Solution(10));
+    }
+
+
+    static void test_GetNumberOfK(){
+        int []temp=new int[]{1,2,2,2,3,4,5};
+        GetNumberOfK getNumberOfK=new GetNumberOfK();
+        System.out.println(getNumberOfK.GetNumberOfK(temp,2));
+    }
+
+    static void test_FindNumsAppearOnce(){
+        int []temp=new int[]{1,3,5,1,2,2,3,4};
+        int []num1 = new int[1];
+        int []num2 = new int[1];
+        FindNumsAppearOnce findNumsAppearOnce = new FindNumsAppearOnce();
+        findNumsAppearOnce.FindNumsAppearOnce(temp,num1,num2);
+        System.out.println(num1[0]+" "+num2[0]);
+    }
 }
+
